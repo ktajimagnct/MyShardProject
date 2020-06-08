@@ -14,12 +14,13 @@ public class Piece {
     public static final int State_White = 1;
     
     private int current_state;
+    
     public Piece(){
         this.current_state = 0;
     }
     
     /** コマをひっくり返す */
     public void turn(){
-        
+        this.current_state = (this.current_state + 1) % 2;
     }
 }
