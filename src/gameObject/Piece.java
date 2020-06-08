@@ -19,6 +19,10 @@ public class Piece {
         this.current_state = 0;
     }
     
+    public Piece(int first_state) {
+        this.current_state = first_state;
+    }
+    
     /** コマをひっくり返す */
     public void turn(){
         this.current_state = (this.current_state + 1) % 2;
